@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vert"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:hint="exemple@gmail.com"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Mot De Passe"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:layout_below="@id/password"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="@color/rouge"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:id="@+id/connect"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Se Connecter"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/connect"
+        android:text="Créer un compte"
+        android:layout_marginRight="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@id/connect"
+        android:layout_alignParentRight="true"
+        android:gravity="right"/>
+
+</RelativeLayout>

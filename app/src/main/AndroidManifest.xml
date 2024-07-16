@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectTest"
+        tools:targetApi="31">
+        <activity
+            android:name=".ModifierPostActivity"
+            android:exported="false"
+            android:parentActivityName=".AdminModifActivity"
+            android:label="Modifier Pharmacie"/>
+        <activity
+            android:name=".DeletePostActivity"
+            android:exported="false"
+            android:label="Supprimer Pharmacie"
+            android:parentActivityName=".AdminDeleteActivity" />
+        <activity
+            android:name=".AddPostActivity"
+            android:exported="false"
+            android:label="Ajouter Pharmacie"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="Création de compte"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminModifActivity"
+            android:exported="false"
+            android:label="Modification"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AdminDeleteActivity"
+            android:exported="false"
+            android:label="Suppression"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="Ajout"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".postDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="Accueil"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Pharmacie">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

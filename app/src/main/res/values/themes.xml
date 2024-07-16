@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjectTest" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="android:colorBackground">@color/white</item> <!-- Couleur de fond de l'application définie en blanc -->
+        <item name="colorPrimary">@color/white</item> <!-- Couleur de l'ActionBar définie en gris -->
+        <item name="windowActionBar">true</item> <!-- Ajouter cette ligne pour activer la barre d'action -->
+        <item name="windowNoTitle">false</item> <!-- Ajouter cette ligne pour afficher le titre de l'activité dans la barre d'action -->
+
+        <!-- Définir la couleur du texte des boutons de la boîte de dialogue -->
+        <item name="buttonBarButtonStyle">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+    </style>
+
+    <style name="Theme.ProjectTest" parent="Base.Theme.ProjectTest" />
+
+    <!-- Style personnalisé pour le bouton positif de la boîte de dialogue -->
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black</item> <!-- Définir la couleur du texte en noir -->
+    </style>
+
+    <!-- Style personnalisé pour le bouton négatif de la boîte de dialogue -->
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black</item> <!-- Définir la couleur du texte en noir -->
+    </style>
+
+    <!-- Style personnalisé pour le bouton neutre de la boîte de dialogue -->
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/black</item> <!-- Définir la couleur du texte en noir -->
+    </style>
+</resources>

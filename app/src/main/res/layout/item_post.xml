@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:id="@+id/ImagePost"
+        android:layout_height="118dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre"
+        android:textSize="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tvTitre"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_show_purpup"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageShowPurpup"
+        android:layout_below="@+id/tvTitre"/>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:text="Je suis developpeur debutant en android "
+        android:layout_below="@+id/tvTitre"
+        android:layout_marginLeft="150dp"
+        android:textSize="18dp"
+        android:id="@+id/tvDescription"
+        android:padding="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>

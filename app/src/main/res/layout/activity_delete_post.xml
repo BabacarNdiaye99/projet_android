@@ -1,0 +1,68 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vert"
+    android:padding="20dp"
+    android:id="@+id/main"
+    tools:context=".DeletePostActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Espace Admin"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/espaceAdmin"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom Pharmacie"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/espaceAdmin"
+        android:layout_marginTop="60dp"
+        android:id="@+id/Prenom"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Prenom"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/NomPharmacie"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/NomPharmacie"
+        android:layout_marginTop="70dp"
+        android:text="Supprimer"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/vert"
+        android:textSize="25dp"
+        android:id="@+id/Supprimer"/>
+
+
+
+
+
+
+</RelativeLayout>
+
+
